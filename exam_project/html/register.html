@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../css/register.css" />
+  </head>
+  <body>
+    <h1>회원가입</h1>
+
+    <form id="muForm">
+      <!-- 이름 -->
+      <label for="name">이름</label>
+      <input type="text" placeholder="이름을 입력하세요" id="name" /> <br />
+      <br />
+      <!-- 아이디 -->
+      <label for="id">아이디</label>
+      <input type="text" placeholder="아이디를 입력해주세요" id="id" />
+      <br /><br />
+      <!-- 비밀번호 -->
+      <label for="pw">비밀번호</label>
+      <input
+        type="text"
+        placeholder="비밀번호를 입력해주세요"
+        id="pw"
+      /><br /><br />
+
+      <!-- 주소 -->
+      <label for="address">주소</label>
+      <input type="text" placeholder="주소를 입력해주세요" id="address" />
+      <button>주소 검색하기</button>
+      <br />
+      <label for="detailAdd">상세 주소</label> <br />
+      <textarea name="detailAdd" id="detailAdd" cols="30" rows="4"></textarea>
+      <br />
+      <br />
+
+      <!-- 이메일 -->
+      <label for="email">이메일</label>
+      <input type="text" placeholder="이메일을 입력해주세요" id="email" />
+      <br />
+      <br />
+
+      <!-- 전화번호 -->
+      <label for="phone">전화번호</label>
+      <input type="text" placeholder="전화번호를 입력해주세요" id="phone" />
+      <br />
+      <br />
+
+      <!-- 라디오버튼 -->
+      <label>성별:</label>
+      <input type="radio" id="option1" name="radioOptions" value="option1" />
+      <label for="option1">남자</label>
+      <input type="radio" id="option2" name="radioOptions" value="option2" />
+      <label for="option2">여자</label>
+      <input type="radio" id="option3" name="radioOptions" value="option3" />
+      <label for="option2">외계인</label><br />
+      <br />
+      <!-- 체크박스 -->
+
+      <div>다음 동의에 대해 체크를 해주세요</div>
+      <input type="checkbox" id="check1" name="checkOptions" value="check1" />
+      <label for="check1">개인정보 이용 동의</label>
+      <br />
+      <input type="checkbox" id="check2" name="checkOptions" value="check2" />
+      <label for="check2">마케팅 이용정보 동의</label>
+      <br />
+      <input type="checkbox" id="check3" name="checkOptions" value="check3" />
+      <label for="check3">전화번호 수집 이용 동의</label>
+      <br />
+      <input type="checkbox" id="check4" name="checkOptions" value="check4" />
+      <label for="check4">동의하는 것을 동의</label>
+      <br />
+      <br />
+      <!-- 셀렉트박스 -->
+      <label for="select">찾아오시게 된 경로</label>
+      <select name="select" id="select">
+        <option value="option1">인터넷</option>
+        <option value="option2">블로그</option>
+        <option value="option3">뉴스</option>
+        <option value="option4">소리소문</option>
+      </select>
+
+      <br />
+      <br />
+      <input type="submit" value="가입하기" />
+    </form>
+    <script src="../js/register.js"></script>
+  </body>
+</html>
