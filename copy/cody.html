@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome! script World2~</h1>
+    <h2>change</h2>
+    <button onclick="test2()" id="button">
+      여기를 누르면 알림창이 뜨는데 누르지 마시오.
+    </button>
+    <div id="position"></div>
+
+    <script>
+      document.getElementById("button").addEventListener("click", function () {
+        document.getElementById("position").textContent =
+          document.getElementById("position").textContent + "hello2";
+      });
+      function test() {
+        document.getElementById("position").textContent =
+          document.getElementById("position").textContent + "hello1";
+      }
+
+      function test2() {
+        let numbers = 12345692394239493453;
+
+        let sum = 0;
+        while (numbers > 0) {
+          let splitNum = numbers % 10;
+          sum += splitNum;
+
+          numbers = parseInt(numbers / 10);
+        }
+        console.log(sum);
+      }
+    </script>
+  </body>
+</html>
